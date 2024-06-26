@@ -79,7 +79,7 @@ test:
 #
 production:
   <<: *default
-  database: rails_watch_list_revisions_production
-  username: rails_watch_list_revisions
+  # database: rails_watch_list_revisions_production
+  # username: rails_watch_list_revisions
   url: <%= ENV['DATABASE_URL'] %>
   # password: <%= ENV["RAILS_WATCH_LIST_REVISIONS_DATABASE_PASSWORD"] %>
