@@ -4,6 +4,8 @@
       <h1 class="mt-4">Lists</h1>
       <ul class="mt-5">
         <% @lists.each do |list| %>
+            <%= cl_image_tag(list.photo.key,
+            width: 400, height: 300, crop: :fill) %>
             <li> <%= list.name %> </li>
           <% end %>
       </ul>
